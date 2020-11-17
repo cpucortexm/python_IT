@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Author: Yogesh Kulkarni
+# user id: cpucortexm
 # python script to read csv file and writing to a text file. CSV contains name, username and department of the employee.
 # The sript reads the csv file as input and generates a text file containing the number of people in each department
 
