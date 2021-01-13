@@ -6,7 +6,11 @@
 # Any value other than 0 means ./random_exit.py was not successful (i.e 1,2,3 are not successful)
 # The random-exit.py produces 0,1,2,3, we need 0 for the "command" to be successful. This is done to simulate a command that sometimes succeeds and sometimes fails.
 # i.e as soon as we have $command as success, we must exit the while loop
-# It is like while(! (True/false)), continue looping if sys.exit(1-3) is false and stop if sys.exit(0) = true in bash 
+# It is like while(! (True/false)), continue looping if sys.exit(1-3) is false and stop if sys.exit(0) = true in bash
+# e.g.
+# python script.py && echo 'OK' || echo 'Not OK'
+# If Python script calls sys.exit(0), the shell returns 'OK'
+# If Python script calls sys.exit(1) (or any non-zero integer), the shell returns 'Not OK'.
 n=0
 command=$1
 
