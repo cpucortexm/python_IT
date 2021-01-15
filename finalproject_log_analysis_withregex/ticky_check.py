@@ -15,8 +15,8 @@ import csv
 import os
 import operator
 
-error_message_columns = ['Error', 'Count']
-per_user_columns = ['Username', 'INFO', 'ERROR']
+error_message_columns = ['Error', 'Count'] # Header for error_message.csv
+per_user_columns = ['Username', 'INFO', 'ERROR'] # header for user_statistics.csv
 
 error_messages  = {}  # dictionary with key = error msg,  value = count of this error msg
 per_user_count  = {} # dictionary with key = username, value = another dictionary with keys = (INFO, ERROR) and value = (info, error)count
